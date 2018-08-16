@@ -33,6 +33,7 @@ h1 {
   line-height: 29px;
   text-align: center;
   line-height: 40px;
+  cursor: pointer;
 }
 
 .header_menu li:nth-child(2) {
@@ -62,6 +63,26 @@ h1 {
   border-right : 1px solid #838383;
 }
 
+.header_menu li:first-child:hover{
+  width: 148px;
+}
+
+.header_menu li:last-child:hover{
+  width: 112.5px;
+}
+
+.header_menu li:nth-child(2):hover{
+  width: 98px;
+}
+
+.header_menu li:nth-child(3):hover{
+  width: 112.5px;
+}
+
+
+
+
+
 
 .left_menu {
   display: inline-block;
@@ -82,7 +103,6 @@ h1 {
 .left_menu li {
   width: 213px;
   height: 39px;
-  padding-left: 25px;
   border: 1px solid #c8c8c8;
 }
 
@@ -96,14 +116,20 @@ h1 {
   background-color: #f9f9f9;
 }
 
-/*.left_menu a:hover{
-  padding-left: 25px;
-}*/
-
 .left_menu li:hover{
   text-indent: 23px;
   width: 213px;
+  cursor: pointer;
 }
+
+.link {
+  display: inline-block;
+  width: 215px;
+  height: 41px;
+  text-indent: 25px;
+}
+
+
 
 .left_menu li a {
   color: #656363;
@@ -178,10 +204,12 @@ img {
 
 .end_menu li:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .end_menu li:last-child:hover{
   text-decoration: none;
+  cursor: default;
 }
 .header {
   margin-left: 48px;
