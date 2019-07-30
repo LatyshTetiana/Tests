@@ -1,0 +1,209 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .page-nav,
+  .footer-links-copy,
+  .left-side-information,
+  .shaker-factory {
+    margin-left: 30px;
+  }
+
+  .main-part__title {
+    width: 100%;
+    padding: 35px 0 35px;
+    font-size: 24px;
+  }
+  .left-side, .right-side {
+    width: 45%;
+  }
+  .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .left-side-information__title {
+    padding-top: 50px;
+    font-size: 28px;
+  }
+  .btn-view {
+    padding: 16px 26px;
+  }
+  .info-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-block__info {
+    width: 100%;
+    padding: 0 0 20px;
+    text-align: center;
+  }
+  .info-block__title {
+    font-size: 20px;
+  }
+  .info-block__text {
+    font-size: 18px;
+    padding: 15px 0 0px;
+  }
+  .footer {
+    padding: 35px 0 35px;
+  }
+  .footer-info {
+    padding: 0 0 50px;
+  }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .page-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .site-navigation {
+    width: 100%;
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  .site-navigation__link {
+    font-size: 20px;
+  }
+  .main-part__title {
+    width: 100%;
+    padding: 35px 0 35px;
+    font-size: 24px;
+  }
+  .left-side, .right-side {
+    width: 100%;
+    text-align: center;
+  }
+  .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .left-side-information__title {
+    padding-top: 50px;
+    font-size: 28px;
+  }
+  .btn-view {
+    padding: 16px 26px;
+  }
+  .left-side-information__buttons-blck {
+    margin: 30px auto 10px;
+  }
+  .info-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-block__info {
+    width: 100%;
+    padding: 0 0 20px;
+    text-align: center;
+  }
+  .info-block__title {
+    font-size: 20px;
+  }
+  .info-block__text {
+    font-size: 18px;
+    padding: 15px 0 0px;
+  }
+  .info-in-bottom {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .footer {
+    padding: 35px 0 35px;
+  }
+  .footer-info {
+    padding: 0 0 50px;
+  }
+  .footer-of-header__img {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-of-header__img img {
+    margin: 0;
+  }
+  .footer-of-header__img img:not(:last-child) {
+    margin: 2%;
+  }
+  .all-rewievs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews__blck-rewiew {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .selections-main {
+    padding: 30px 0;
+  }
+  .selections__title {
+    width: 75%;
+    font-size: 20px;
+  }
+  .footer-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-info>div {
+    width: 90%;
+    text-align: center;
+    margin: 0!important;
+  }
+  .column-name {
+    padding: 15px 0 10px;
+    font-size: 20px;
+  }
+  .column-information {
+    font-size: 18px;
+  }
+  .social-media__image {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-links-copy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-button {
+    width: 100%;
+    text-align: center;
+  }
+  .company__info {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 950px) and (max-width: 1214px) {
+    .page-nav,
+    .footer-links-copy,
+    .left-side-information,
+    .shaker-factory {
+      margin-left: 30px;
+    }
+  }
+}
