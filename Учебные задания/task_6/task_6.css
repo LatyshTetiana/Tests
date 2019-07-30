@@ -1,0 +1,136 @@
+table, td {
+border-collapse: collapse;
+}
+
+table {
+  font-family: sans-serif;
+  overflow: hidden;
+  color: #4B0082;
+  margin-top: 35px;
+}
+
+th, td {
+  position: relative;
+  height: 30px;
+  border: 1px solid #000000;
+  text-align: center;
+  outline: 0;
+}
+
+th {
+  background-color: #FFDAB9;
+}
+
+tr:nth-child(even) td:first-of-type::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -2500px;
+  background: #FFDAB9;
+  height: 100%;
+  width: 5000px;
+  z-index: -5;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #ffa;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after {
+  content: '';
+  height: 1000px;
+  left: 0;
+  position: absolute;
+  top: -500px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: #ffa;
+}
+
+form {
+  margin-top: 30px;
+  font-family: sans-serif;
+  width: 40%;
+}
+
+.form_input {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #4B0082;
+  outline: none;
+}
+
+.form_input:focus {
+  border-bottom: 1px solid #1a73a3;
+}
+
+.form_button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFDAB9;
+  color: #4B0082;
+  font-size: 20px;
+  outline: none;
+}
+
+.pattern {
+  font-size: 25px;
+  color: #4B0082;
+}
+
+.form {
+   font-size: 30px;
+   color: #4B0082;
+   margin: 5px;
+ }
+
+label {
+  font-size: 20px;
+  color: #4B0082;
+}
+
+.form_button {
+  display: none;
+}
+
+#tel:valid ~ #email:valid ~ .form_button {
+  display: block;
+}
+
+#weekdays:checked ~ table > tbody  tr.weekends {
+  display: none;
+}
+
+#weekends:checked ~ table > tbody  tr.weekdays {
+  display: none;
+}
+
+#high:checked ~ table > tbody  tr.middle {
+  display: none;
+}
+
+#middle:checked ~ table > tbody  tr.high {
+  display: none;
+}
+
+input[type="search"] {
+  width: 300px;
+  height: 40px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px #7BA7AB;
+  font-size: 20px;
+}

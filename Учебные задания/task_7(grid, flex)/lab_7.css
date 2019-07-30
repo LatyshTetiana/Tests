@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  background-color: #08457E;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(18, 50px);
+}
+
+.header {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  display: flex;
+}
+
+.header p {
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  margin: auto;
+}
+
+.left-side {
+  grid-column: 1/2;
+  grid-row-start: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side > div {
+  width: 90%;
+  min-height: 50px;
+  margin-bottom: 10px;
+  background-color: #1E90FF;
+  color: #fff;
+  text-align: center;
+}
+
+.left-side label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+}
+
+
+input[name="sweets"] {
+  visibility: hidden;
+}
+
+#big_cake:checked ~ .pictures > :not(.show-big-cake){
+  filter: grayscale(100%);
+}
+
+#big_cake:checked ~ .left-side > .big_cake {
+  background-color: #090948;
+}
+
+#roll:checked ~ .pictures > :not(.show-roll){
+  filter: grayscale(100%);
+}
+
+#roll:checked ~ .left-side > .roll {
+  background-color: #090948;
+}
+
+#cake:checked ~ .pictures > :not(.show-cake){
+  filter: grayscale(100%);
+}
+
+#cake:checked ~ .left-side > .cake {
+  background-color: #090948;
+}
+
+#pie:checked ~ .pictures > :not(.show-pie){
+  filter: grayscale(100%);
+}
+
+#pie:checked ~ .left-side > .pie {
+  background-color: #090948;
+}
+
+#cheesecake:checked ~ .pictures > :not(.show-cheesecake){
+  filter: grayscale(100%);
+}
+
+#cheesecake:checked ~ .left-side > .cheesecake {
+  background-color: #090948;
+}
+
+.pictures {
+  grid-row-start: 3;
+  grid-row-end: 18;
+  grid-column: 2/3;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 181.5px);
+}
+
+figure {
+  margin: 0;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-1 {
+  padding: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.gallery-3 {
+  padding: 0;
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.gallery-4 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.gallery-5 {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+.gallery-6 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.gallery-7 {
+
+}
+
+.gallery-8 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.rating {
+  grid-column: 3/4;
+  grid-row: 3/18;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background-color: #090948;
+}
+
+.name {
+  width: 26%;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.rating label {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 50%;
+}
+
+.rating input {
+}
+
+#rating:checked ~ .blocks > .block3 {
+  order: 5;
+}
+
+#rating:checked ~ .blocks > .block2 {
+  order: 4;
+}
+
+#rating:checked ~ .blocks > .block1 {
+  order: 3;
+}
+
+#rating:checked ~ .blocks > .block4 {
+  order: 2;
+}
+
+#rating:checked ~ .blocks > .block5 {
+  order: 1;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.blocks p {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.block1-1,
+.block2-1,
+.block3-1,
+.block4-1,
+.block5-1 {
+  height: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.block1-1,
+.block4-1,
+.block5-1 {
+  width: 80%;
+  background: linear-gradient(to right, #7FFF00, #fff);
+}
+
+.block2-1 {
+  width: 60%;
+  background: linear-gradient(to right, #FFD700, #fff);
+}
+
+.block3-1 {
+  width: 40%;
+  background: linear-gradient(to right, #8B0000, #fff);
+}
+
+.footer {
+  grid-column: 1/4;
+  grid-row: 18/19;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer p {
+  width: 5%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.left-side label {
+  cursor: pointer;
+}

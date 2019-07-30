@@ -1,0 +1,25 @@
+table,tr, td,th {
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+table {
+  width: 700px;
+  height: 900px;
+}
+
+.yellow {
+  background-color: #fffa69;
+}
+
+.red {
+  background-color: #ff5b2d;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.blue {
+  background-color: #074481;
+}

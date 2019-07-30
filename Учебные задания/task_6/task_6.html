@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>lab3_6</title>
+  <link rel="stylesheet" href="task_6.css">
+</head>
+
+<body>
+  <p class="form">Оберіть день прийому</p>
+  <input type="radio" name="days" id="weekdays">
+  <label for="weekdays">Будні</label>
+  <input type="radio" name="days" id="weekends">
+  <label for="weekends">Вихідні</label>
+  <input type="radio" name="days" id="all">
+  <label for="all">Будь-який день</label>
+  <p class="form">Оберіть категорію спеціаліста</p>
+  <input type="radio" name="level" id="high">
+  <label for="high">Вища</label>
+  <input type="radio" name="level" id="middle">
+  <label for="middle">Середня</label>
+  <input type="radio" name="level" id="no-matter">
+  <label for="no-matter">Будь-яка</label>
+  <br><br>
+  <input type="search" placeholder="Пошук по спеціальності">
+  <table>
+    <thead>
+      <tr>
+        <th>ПІБ</th>
+        <th>Спеціальність</th>
+        <th>Категорія фахівця</th>
+        <th>Номер кабінету</th>
+        <th>Дні роботи</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="weekdays high">
+        <td>Замаруєва М.А.</td>
+        <td>Терапевт</td>
+        <td>Вища</td>
+        <td>12</td>
+        <td>Пн, Ср, Пт</td>
+      </tr>
+      <tr class="weekdays high">
+        <td>Вінницька Н.В.</td>
+        <td>Стоматолог</td>
+        <td>Вища</td>
+        <td>10</td>
+        <td>Вт, Ср, Пт</td>
+      </tr>
+      <tr class="weekdays-weekends middle">
+        <td>Онофрієнко П.Т</td>
+        <td>Гастроентеролог</td>
+        <td>Середня</td>
+        <td>4</td>
+        <td>Вт, Сб</td>
+      </tr>
+      <tr class="weekdays middle">
+        <td>Копач Н.К.</td>
+        <td>ЛОР</td>
+        <td>Середня</td>
+        <td>5</td>
+        <td>Пн, Вт, Пт</td>
+      </tr>
+      <tr class="weekdays-weekends high">
+        <td>Сидоров К.П.</td>
+        <td>Педіатр</td>
+        <td>Вища</td>
+        <td>10</td>
+        <td>Пн, Нд</td>
+      </tr>
+      <tr class="weekdays-weekends high">
+        <td>Константинова А.П.</td>
+        <td>ЛОР</td>
+        <td>Вища</td>
+        <td>7</td>
+        <td>Вт, Нд</td>
+      </tr>
+      <tr class="weekdays-weekends high">
+        <td>Кирилова У.В.</td>
+        <td>Терапевт</td>
+        <td>Вища</td>
+        <td>1</td>
+        <td>Вт, Чт, Сб</td>
+      </tr>
+      <tr class="weekdays-weekends high">
+        <td>Романова І.М.</td>
+        <td>Гінеколог</td>
+        <td>Вища</td>
+        <td>3</td>
+        <td>Пт, Сб</td>
+      </tr>
+      <tr class="weekends high">
+        <td>Василенко Г.Л.</td>
+        <td>Педіатр</td>
+        <td>Вища</td>
+        <td>2</td>
+        <td>Сб, Вс</td>
+      </tr>
+      <tr class="weekdays middle">
+        <td>Козлов Є.Р.</td>
+        <td>Реабілітолог</td>
+        <td>Середня</td>
+        <td>3</td>
+        <td>Пн, Вт, Чт</td>
+      </tr>
+      <tr class="weekdays-weekends high">
+        <td>Попова А.Т.</td>
+        <td>Хірург</td>
+        <td>Вища</td>
+        <td>5</td>
+        <td>Ср, Чт, Сб</td>
+      </tr>
+      <tr class="weekdays middle">
+        <td>Ріпич Д.Р.</td>
+        <td>Стоматолог</td>
+        <td>Середня</td>
+        <td>4</td>
+        <td>Пн, Чт</td>
+      </tr>
+      <tr class="weekdays-weekends high">
+        <td>Пащенко Л.Л.</td>
+        <td>Хірург</td>
+        <td>Вища</td>
+        <td>3</td>
+        <td>Пт, Нд</td>
+      </tr>
+      <tr class="weekdays middle">
+        <td>Кириченко Р.О.</td>
+        <td>Окуліст</td>
+        <td>Середня</td>
+        <td>2</td>
+        <td>Пн, Пт</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form>
+    <p class="pattern">Номер телефона вказати у вигляді: +38(0**)***-**-**</p>
+    <input type="tel" id="tel" class="form_input" pattern="+38\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
+      placeholder="Телефон" required>
+    <input type="email" id="email" class="form_input" placeholder="Email" required>
+    <input type="submit" class="form_button" value="Надслати дані на телефон">
+  </form>
+</body>
+
+</html>

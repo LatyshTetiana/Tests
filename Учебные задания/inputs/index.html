@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lab2_task1</title>
+</head>
+
+<body>
+  <form method="post">
+    Name: <br>
+    <input type="text" name="Firstname" placeholder="Your name" required>
+    <br><br>
+    Email: <br>
+    <input type="email" name="email" placeholder="Your email" required>
+    <br><br>
+    Sex<br>
+    <input type="radio" name="sex">Male
+    <input type="radio" name="sex">Female
+    <br><br>
+    Current status<br>
+    <input type="checkbox">Student <br>
+    <input type="checkbox">Employed <br>
+    <input type="checkbox">Unemployed
+    <br><br>
+    Birthday<br>
+    <input type="date">
+    <br><br>
+    Skills and Technologies<br>
+    <select multiple size="11" name="Skills">
+      <optgroup label="Tech skills">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="ASP.NET">ASP.NET</option>
+        <option value="PHP">PHP</option>
+      </optgroup>
+      <optgroup label="Tech skills">
+        <option value="Time management">Time management</option>
+        <option value="Proactivity">Proactivity</option>
+        <option value="Teamwork">Teamwork</option>
+        <option value="Leadership">Leadership</option>
+      </optgroup>
+    </select>
+    <br><br>
+    Photo<br>
+    <input type="file" accept="image/jpeg">
+    <br><br>
+    Comments<br>
+    <textarea rows="10" cols="40"></textarea>
+    <br><br>
+    <input type="submit">
+    <input type="reset">
+  </form>
+</body>
+
+</html>
