@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: auto;
+  background-image: url(img/background_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-container {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 350px;
+  min-height: 550px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.icon {
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  z-index: 100000;
+  margin-top: -3%;
+}
+
+.wrapper-icon {
+  width: 5%;
+  margin: 0 auto;
+}
+
+form {
+  margin: auto;
+}
+
+h1,
+p {
+  color: #78fbf9;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-top: 20%;
+}
+
+p {
+  margin-bottom: 10%;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 40px;
+  border: 1.5px solid #63ffff;
+  padding-left: 3%;
+  color: #3e9ffd;
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.fake-checkbox {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 4px;
+  background: #3e9ffd;
+  border-radius: 5px;
+}
+
+
+.checkbox:checked + .fake-checkbox::before {
+  content: "\2713";
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  margin-top: -5px;
+  margin-left: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1.5px solid #3e9ffd;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="password"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus::-moz-placeholder,
+input[type="password"]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="password"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus::-ms-input-placeholder,
+input[type="password"]:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  font-size: 20px;
+  padding-left: 3%;
+  color: #3e9ffd;
+}
+
+input::-webkit-input-placeholder {
+  color: #b7ffff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 3%;
+}
+
+input::-moz-placeholder {
+  color: #b7ffff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 3%
+}
+
+input:-ms-input-placeholder {
+  color: #b7ffff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 3%
+}
+
+input::-ms-input-placeholder {
+  color: #b7ffff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 3%
+}
+
+input::placeholder {
+  color: #b7ffff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 3%
+}
+
+label {
+  height: 30px;
+  color: #63ffff;
+  font-size: 20px;
+  margin-left: 1%;
+  vertical-align: text-bottom;
+}
+
+button {
+  background-color: #3e9ffd;
+  color: #fff;
+  font-size: 25px;
+  border: none;
+  margin-top: 13%;
+  margin-bottom: 15%;
+}
+
+/*ANIMATIONS*/
+.container {
+  -webkit-perspective: -500px;
+          perspective: -500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-animation: rotate 3s;
+  animation: rotate 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.icon {
+  -webkit-perspective: 200px;
+          perspective: 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-animation: rotate 3s;
+  animation: rotate 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
