@@ -1,0 +1,216 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+@media (max-width: 480px) {
+    .pop_up_registration {
+        width: 100%;
+        margin-top: 17%;
+    }
+    .main_info {
+        width: 90%;
+    }
+    .slogan {
+        width: 100%;
+    }
+    .calculate {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .slogan p:first-child {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .slogan p:last-child {
+        font-size: 18px;
+    }
+    .top_info {
+        width: 90%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .top {
+        height: 56px;
+    }
+}
+@media (min-width: 481px) and (max-width: 580px) {
+    .pop_up_registration {
+        width: 90%;
+        margin-top: 12%;
+    }
+}
+@media (min-width: 581px) and (max-width: 700px)  {
+    .pop_up_registration {
+        width: 70%;
+        margin-top: 12%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+    .calculate {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .main_info {
+        width: 80%;
+    }
+    .slogan p:first-child {
+        font-size: 28px;
+        line-height: 36px;   
+    }
+    .slogan p:last-child {
+        font-size: 20px;
+    }
+    .top_info {
+        width: 85%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .top {
+        height: 56px;
+    }
+}
+@media (min-width: 481px) and (max-width: 550px) {
+    .calculate {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 350px) {
+    .price {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .show_price {
+        margin-top: 10px;
+    }
+    .calculate {
+        height: 350px;
+    }
+}
+@media (max-width: 700px) {
+    .main_info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .wrapper {
+        height: 100vh;
+    }
+    .slogan {
+        width: 100%;
+    }
+    .overlay {
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .slogan p:first-child {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .slogan p:last-child {
+        text-align: center;
+        padding: 20px 0px 54px 0;
+    }
+}
+@media (min-width: 701px) and (max-width: 850px) {
+    .pop_up_registration {
+        width: 60%;
+        margin-top: 6%;
+    }
+    .slogan p:first-child {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+@media (min-width: 851px) and (max-width: 1000px) {
+    .pop_up_registration {
+        width: 45%;
+        margin-top: 6%;
+    }
+    .slogan p:first-child {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+    .wrapper {
+        height: 100vh;
+    }
+    .main_info {
+        width: 85%;
+    }
+    .overlay {
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .top_info {
+        width: 70%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .top {
+        height: 56px;
+    }
+    
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .wrapper {
+        height: 100vh;
+    }
+    .main_info {
+        width: 80%;
+    }
+    .overlay {
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .slogan {
+        width: 80%;
+    }
+    .slogan p:first-child {
+        font-size: 42px;
+        line-height: 47px;
+    }
+    .slogan p:last-child {
+        padding-top: 20px;
+    }
+    .pop_up_registration {
+        width: 35%;
+    }
+} 
+@media (min-width: 1201px) and (max-width: 1300px) {
+    .main_info {
+        width: 75%;
+    }
+    .slogan {
+        width: 80%;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .wrapper {
+        height: 100vh;
+    }
+    .overlay {
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .slogan p:first-child {
+        font-size: 42px;
+        line-height: 47px;
+    }
+    .slogan p:last-child {
+        padding-top: 20px;
+    }
+    .pop_up_registration {
+        width: 30%;
+    }
+}

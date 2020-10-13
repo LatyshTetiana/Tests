@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top">
+      <div class="top_info">
+        <p>Lorem ipsum dolor sit amet donec voluptatem ipsum dolor sit ame</p>
+        <p class="close_icon" id="slideup"><img src="icons/close_icon.svg" alt="icon"></p>
+      </div>
+    </div>
+    <div class="main_info">
+      <div class="slogan">
+        <p>Professional Custom Servise Just&nbsp;<span>for You</span></p>
+        <p>We can do &nbsp;<span>anything</span></p>
+      </div>
+      <div class="calculate">
+        <h1>Calculate the price</h1>
+        <p class="description">Choose level</p>
+        <select>
+          <option>Hardcore</option>
+        </select>
+        <p class="description">How many</p>
+        <div class="price">
+          <div class="quantity_block">
+            <p class="deduct">-</p>
+            <p class="quantity">1</p>
+            <p class="add">+</p>
+          </div>
+          <div class="show_price">
+            <p class="summ">10.99$</p>
+            <p class="pop_up">Pop up</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_wrapper">
+      <div class="pop_up_registration">
+        <div class="form-close_icon"><img src="icons/close_icon.svg" alt="icon"></div>
+        <div class="pop_up_registration_form">
+          <h1>Ask us how we can help you</h1>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>Enter your name</p>
+          <input type="text" name="name" value="" id="name" required />
+          <p class="invalid_name">Name should be longer</p>
+          <p>Enter your email</p>
+          <input id="email" type="email" name="email" value="" required />
+          <p class="invalid_email">Invalid email</p>
+          <input type="submit" value="Continue&nbsp;" class="submit_form" />
+          <p class="empty_form">Enter your information</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal_wrapper_submit">
+      <div class="on_submit">
+        <div class="form-close_icon"><img src="icons/close_icon.svg" alt="icon"></div>
+        <img src="icons/envelope.svg" alt="letter">
+        <h1>Thank you!</h1>
+        <p>Please check your email</p>
+        <input type="submit" value="Ok, tnk" />
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
