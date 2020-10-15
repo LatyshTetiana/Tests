@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #181818;
+}
+
+nav {
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+}
+
+.logo {
+    display: block;
+    width: 120px;
+    height: 30px;
+    background-image: url(../img/logo.png);
+    background-size: 100%;
+    margin-left: 2%;
+}
+
+.links {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: auto;
+    margin-right: 50px;
+    list-style: none;
+}
+
+nav li {
+    font-size: 18px;
+    color: #c8d6f7;
+}
+
+
+/* STYLES FOR BUTTONS LOG IN AND SIGN IN */
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.login,
+.signin {
+    display: block;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-right: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.login {
+    color: #f6fc89;
+    margin-right: 30px;
+    border: 1px solid #f6fc89;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.login:hover {
+    background-color: #fff32b;
+    border: 1px solid #fff32b;
+    color: #000;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.signin {
+    color: #000;
+    background-color:#fff32b;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    position: relative;
+}
+.signin:after {
+    display: none;
+    content: "";
+    display: block;
+	position: absolute;
+	left: 30px;
+	width: 0px;
+	height: 2px; 
+	background-color: #000; 
+	-webkit-transition: width 0.2s ease-out; 
+	-o-transition: width 0.2s ease-out; 
+	transition: width 0.2s ease-out;
+}
+.signin:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.signin:hover::after {
+    display: block;
+    width: calc(100% - 60px);
+}
+
+
+/* STYLES FOR MENU LINKS */
+
+.item {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.item span {
+    display: block;
+    height: 100%;
+}
+.item:after {
+    content: '';
+    display: block;
+    height: 35px;
+    width: 100%;
+    position: absolute;
+}
+.item span {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.item span:hover {
+    cursor: pointer;
+    -webkit-filter: opacity(0.6);
+            filter: opacity(0.6);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.item:hover .submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/* STYLES FOR MOBILE MENU */
+
+.mobile-wrap {
+    display: none;
+}
+.mobile-button__wrap {
+    width: 40px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 30px;
+}
+.mobile-item span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100% - 65px);
+    height: 80px;
+    border-bottom: 1px solid rgb(19, 16, 16);
+    color: #B4B4B4;
+    font-size: 20px;
+    padding-left: 65px;
+    position: relative;
+}
+.mobile-item:first-child span::before,
+.mobile-item:nth-child(2) span::before,
+.mobile-item:last-child span::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 15px;
+    background-size: 35px auto;
+    background-repeat: no-repeat;
+    -webkit-filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(343deg) brightness(98%) contrast(92%);
+            filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(343deg) brightness(98%) contrast(92%);
+}
+.mobile-item ul li {
+    display: block;
+    height: 40px;
+    background-color: #fff32b;
+    color: #000;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.mobile-item span ~ ul {
+    display: none;
+}
+.mobile-item:first-child span::before {
+    background-image: url(../icons/person.svg);
+}
+.mobile-item:nth-child(2) span::before {
+    background-image: url(../icons/computer.svg);
+}
+.mobile-item:last-child span::before {
+    background-image: url(../icons/home.svg);
+}
+.plus {
+    width: 15px;
+    height: 15px;
+    background-image: url(../icons/plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+
+/* STYLES FOR OPENED MOBILE MENU */
+
+.mobile-item:first-child span.active::before,
+.mobile-item:nth-child(2) span.active::before,
+.mobile-item:last-child span.active::before {
+    -webkit-filter: invert(90%) sepia(47%) saturate(811%) hue-rotate(341deg) brightness(103%) contrast(103%);
+            filter: invert(90%) sepia(47%) saturate(811%) hue-rotate(341deg) brightness(103%) contrast(103%);
+}
+.mobile-item span.active .plus {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* STYLES FOR SUBMENU */
+
+.submenu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 90px;
+    position: absolute;
+    top: 65px;
+    list-style: none;
+    margin-left: -10px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.submenu li {
+    color: #000;
+    padding: 5px;
+    text-align: center;
+}
+.submenu li:hover {
+    background-color:#fff32b;
+    cursor: pointer;
+}
